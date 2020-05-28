@@ -1,0 +1,378 @@
+header {
+    background-color: $sec-color;
+    padding: 30px 88px;
+
+    @media (max-width:768px) {
+        padding: 40px 48px;
+    }
+
+    @media (max-width:415px) {
+        padding: 10px 0;
+        // position: fixed;
+        width: 100vw;
+        z-index: 10;
+    }
+
+    h1 {
+        display: block;
+        width: 80px;
+        height: 49px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(../images/logo-new.png);
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @media (max-width:415px) {
+            width: 48px;
+            height: 30px;
+        }
+    }
+
+    ul {
+        width: 492px;
+
+        @media (max-width:768px) {
+            width: 420px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            line-height: 30px;
+
+            &:hover {
+                border-bottom: 3px solid #fff;
+            }
+        }
+
+
+        @media (max-width:415px) {
+
+            &.mobileMode {
+                overflow: hidden;
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                height: 0px;
+                transition: all 0.8s;
+
+                li {
+                    width: 100%;
+
+
+                }
+
+                a {
+                    width: 100%;
+                    text-align: center;
+                    line-height: 60px;
+                    border-top: 1px solid #fff;
+                    display: block;
+                    background-color: $sec-color;
+
+                    &:hover {
+                        border-bottom: 0;
+                    }
+                }
+
+                &.show {
+                    height: 240px;
+                }
+            }
+        }
+    }
+
+    .ham-icon {
+        display: none;
+
+        @media (max-width:415px) {
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            color: #fff;
+            left: 13px;
+            z-index: 11;
+            background-image: url(../images/ic_menu_24px.svg);
+        }
+    }
+}
+
+
+footer {
+    padding-top: 36px;
+    padding-bottom: 28px;
+    background: $sec-color;
+    color: white;
+
+    @media (max-width:768px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width:415px) {
+        padding: 24px 0;
+
+        .container {
+            position: relative
+        }
+    }
+
+
+
+    .footerBox1 {
+        margin-bottom: 18px;
+
+        @media (max-width:768px) {
+            margin-bottom: 22px;
+        }
+
+        @media (max-width:415px) {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .menu {
+        li {
+            margin-right: 48px;
+
+            @media (max-width:768px) {
+                margin-right: 40px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                color: white;
+            }
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width:415px) {
+            display: none;
+        }
+
+    }
+
+
+    .sns {
+        li {
+            margin-right: 32px;
+
+            @media (max-width:768px) {
+                margin-right: 24px;
+            }
+
+            a {
+                display: block;
+                width: 48px;
+                height: 48px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-indent: 101%;
+                white-space: nowrap;
+                overflow: hidden;
+
+                @media (max-width:768px) {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                &.fb {
+                    background-image: url(../images/ic-fb.svg);
+                }
+
+                &.ig {
+                    background-image: url(../images/ic-ig.svg);
+                }
+
+                &.line {
+                    background-image: url(../images/ic-line.svg);
+                }
+            }
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 54px;
+
+        @media (max-width:768px) {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        @media (max-width:415px) {
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        span {
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center
+        }
+
+        &.phone {
+            margin-bottom: 16px;
+
+            span {
+                width: 36px;
+                height: 36px;
+                margin-right: 23px;
+                background-image: url(../images/ic_phone.svg);
+
+
+            }
+
+            @media (max-width:768px) {
+                margin-bottom: 11px;
+
+                span {
+                    width: 23px;
+                    height: 23px;
+                    margin-left: 5px;
+                    margin-right: 12px;
+                }
+
+            }
+
+            @media (max-width:415px) {
+                margin-bottom: 8px;
+
+                span {
+                    width: 13px;
+                    height: 13px;
+                    margin-left: 4px;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        &.mail {
+            margin-bottom: 24px;
+
+            span {
+                width: 48px;
+                height: 48px;
+                margin-right: 12px;
+                background-image: url(../images/ic_mail.svg);
+
+            }
+
+            @media (max-width:768px) {
+                margin-bottom: 27px;
+
+                span {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 8px;
+                }
+
+            }
+
+            @media (max-width:415px) {
+                margin-bottom: 24px;
+
+                span {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+
+            }
+        }
+    }
+
+    .footerBox2 {
+        border-top: 1px solid white;
+        padding-top: 24px;
+
+        @media (max-width:415px) {
+            padding-top: 16px;
+
+        }
+
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+
+            @media (max-width:415px) {
+                font-size: 14px;
+                line-height: 19px;
+                margin-bottom: 8px;
+            }
+
+            span {
+                width: 80px;
+                height: 49px;
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../images/logo-new.png);
+                margin-right: 38px;
+
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+
+        }
+
+        
+            li {
+                margin-right: 62px;
+
+                @media (max-width:415px) {
+                    width: 100%;
+                    margin-bottom: 8px;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0;
+                    }
+                }
+
+
+
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 21px;
+                color: white;
+            }
+
+        
+    }
+
+    .logo-s {
+        display: none;
+
+        @media (max-width:415px) {
+            position: absolute;
+            display: block;
+            width: 46px;
+            right: 0;
+            bottom: -4px;
+        }
+    }
+}

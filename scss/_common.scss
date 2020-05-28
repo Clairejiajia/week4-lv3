@@ -1,0 +1,201 @@
+// common css Start
+$main-color: #650300;
+$sec-color: #AA0601;
+$gray-color: #DCDCDC;
+$dark-gray-color: #555555;
+$bg-color:#fcf3f1;
+
+  
+a {
+    text-decoration: none;
+} 
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        max-width: 672px;
+    }
+
+    @media (max-width:415px) {
+        max-width: 352px;
+    }
+}
+
+.container-form {
+    max-width: 792px;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        max-width: 496px;
+
+    }
+
+    @media (max-width:415px) {
+        max-width: 327px;
+
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .d-flex-m {
+        display: flex;
+    }
+}
+
+@media (max-width:768px) {
+    .d-none-s {
+        display: none;
+    }
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px) {
+    .f-wrap-m {
+        flex-wrap: wrap;
+    }
+    .f-nowrap-m{
+        flex-wrap:nowrap;
+    }
+
+}
+
+@media (max-width:415px) {
+    .f-wrap-s {
+        flex-wrap: wrap;
+    }
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+
+.fd-column {
+    flex-direction: column;
+}
+
+.fd-row-reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width:768px) {
+    .fd-row-m {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:415px) {
+    .fd-row-s {
+        flex-direction: row;
+    }
+}
+
+
+
+.order-1 {
+    order: 1;
+}
+
+@media (max-width:768px) {
+    .order-m-0 {
+        order: 0;
+    }
+
+    .order-m-1 {
+        order: 1;
+    }
+
+    .order-m-2 {
+        order: 2;
+    }
+
+    .order-m-3 {
+        order: 3;
+    }
+
+    .order-m-4 {
+        order: 4;
+    }
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .jc-space-between-m {
+        justify-content: space-between;
+    }
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .jc-center-m {
+        justify-content: center;
+    }
+}
+
+@media (max-width:415px) {
+    .jc-center-s {
+        justify-content: center;
+    }
+
+    .jc-end-s {
+        justify-content: flex-end;
+    }
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-flex-end {
+    align-items: flex-end;
+}
+
+@media (max-width:768px) {
+    .ai-center-m {
+        align-items: center;
+    }
+}
+
+@media (max-width:415px) {
+    .ai-center-s {
+        align-items: center;
+    }
+}
+
+
+.mr-1 {
+    margin-right: 8px;
+}
+
+.mb-1 {
+    margin-bottom: 8px;
+}
+
+.mb-2 {
+    margin-bottom: 16px;
+}
+
+.mb-5 {
+    margin-bottom: 42px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+
+// common css End
